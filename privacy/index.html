@@ -35,7 +35,7 @@
 
   <h2>AI reads</h2>
   <p>AI reads are short, labelled notes on a trade or on the market, written by Claude, an AI model made by Anthropic. They are off until you allow them: the first time, the app shows what each read sends and asks Allow AI reads or Not now. Nothing is sent before you allow them, and you can stop them at any time in Settings › AI reads.</p>
-  <p>A trade read sends that trade's figures, setup, tags and notes over HTTPS to The Ledger's server, which passes them to Anthropic to write the read. With Settings › AI reads on Automatic, opening a closed trade can request a read, and an open trade is read when you tap Read this trade so far. A market read on Home or Your Market Pulse sends public index quotes, official releases and your tickers. Choose On this iPhone or Off to stop server AI reads; plain summaries remain available either way.</p>
+  <p>A trade read sends that trade's figures, setup, tags and notes over HTTPS to The Ledger's server, which passes them to Anthropic to write the read. With Settings › AI reads on Automatic, opening a closed trade can request a read, and an open trade is read when you tap Read this trade so far. A market read on Home or Your Market Pulse sends public index quotes, official releases and up to five of your tickers. Your install ID is not sent to Anthropic. Choose On this iPhone or Off to stop server AI reads; plain summaries remain available either way.</p>
   <p>If you add your own Anthropic API key in Settings › AI reads › Your Claude key, AI reads on that phone use your key, and Anthropic bills you for them.</p>
   <p>The Ledger's server processes the trade information and the response in memory to return the read; it does not keep your prompt or the read's text, except that reads for the app owner's own devices may be cached to avoid repeating the same read. Anthropic's handling is separate: under its standard API policy, inputs and outputs are normally deleted within 30 days, and a different agreement, safety enforcement or legal requirements can change that period. See Anthropic's commercial data-retention policy.</p>
 
@@ -49,7 +49,7 @@
     <li>Mailbox access and held emails: Settings › Trade emails › Disconnect.</li>
     <li>A Claude key you added yourself: Settings › AI reads › Your Claude key › Remove key, where shown.</li>
     <li>Your journal: delete the app. Keychain items can outlast an app deletion, so use the controls above first.</li>
-    <li>Your device's records on The Ledger's server: Settings › Privacy › Remove this device's access. Prices, charts and AI reads stop until you tap Get access, and your journal stays on your iPhone.</li>
+    <li>Your device's records on The Ledger's server: Settings › Privacy › Remove this device's access. It also deletes a Claude key saved on the phone and turns AI reads off until you allow them again. Prices, charts and AI reads stop until you tap Get access, and your journal stays on your iPhone.</li>
   </ul>
 
   <h2>Contact</h2>
