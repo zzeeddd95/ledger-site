@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · The Ledger</title>
+<meta name="description" content="How The Ledger, a trading journal by RookyTech Inc., handles your data.">
+<link rel="icon" href="/assets/icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header>
+  <img src="/assets/icon.png" alt="">
+  <span class="name"><a href="/">The Ledger</a></span>
+  <nav><a href="/support/">Support</a><a href="/privacy/">Privacy</a></nav>
+</header>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="dated">Dated 24 November 2026</p>
+  <p>RookyTech Inc. provides The Ledger, a trading journal for recording and reviewing trades. It does not place broker orders. The Ledger has no ads, no advertising analytics and no tracking.</p>
+
+  <h2>Your journal stays on your device</h2>
+  <p>Your journal of record (your trades, notes, imports and settings) is stored on your device. The Ledger's server does not host or sync your journal. You can export a CSV or share information yourself. Optional AI reads send selected trade information, as described below.</p>
+
+  <h2>Trade emails</h2>
+  <p>If you connect a mailbox, the app reads supported Wealthsimple trade emails directly from your mail provider, read-only, and processes them on your device. Only messages from wealthsimple.com are opened. Your mailbox sign-in, connection details and email-import history stay on your device; they are not sent to The Ledger's server. Emails waiting under Needs a look are kept on the device until resolved, for up to 30 days. Disconnecting the mailbox removes its saved access, import history and held emails from the app; trades already logged remain in your journal. The app never sends, moves or deletes mail in your mailbox.</p>
+
+  <h2>Prices and charts</h2>
+  <p>For prices and charts, the app sends The Ledger's server the symbols and contracts it needs. The server fetches prices from its market-data provider and may cache market responses. It does not keep a watchlist for your device.</p>
+
+  <h2>Market Pulse and ticker news</h2>
+  <p>Market Pulse uses public benchmark prices, headlines and economic release schedules, including public feeds from the Federal Reserve, the Bureau of Labor Statistics and the Bureau of Economic Analysis. Your tickers are chosen on your device from your open positions, recent trades and pinned tickers, up to five stock or ETF symbols, and the app sends those symbols to The Ledger's server for prices and news. The server gets ticker news from its news provider and caches public news and commentary in memory by ticker.</p>
+  <p>For Market Pulse commentary, the server uses its own access to Anthropic's API. Those requests contain selected ticker symbols and public market information only, such as quotes, headline excerpts and release schedules. Catalyst Replay combines public events with your recorded fills on your device.</p>
+  <p>When a news item includes publisher artwork, the app loads the image from its host, which receives the usual connection information for that request.</p>
+
+  <h2>AI reads</h2>
+  <p>An AI read is a short, labelled description of a recorded trade. For a server AI read, the app sends the selected trade's figures, setup, tags and notes over HTTPS to The Ledger's server, which passes them to Anthropic to write the read. With Settings › AI reads on Automatic, opening a closed trade can request a read, and an open trade is read when you tap Read this trade so far. Choose On this iPhone or Off to stop server AI reads; plain summaries remain available either way.</p>
+  <p>The Ledger's server processes the trade information and the response in memory to return the read; it does not keep your prompt or the read's text, except that reads for the app owner's own devices may be cached to avoid repeating the same read. Anthropic's handling is separate: under its standard API policy, inputs and outputs are normally deleted within 30 days, and a different agreement, safety enforcement or legal requirements can change that period. See Anthropic's commercial data-retention policy.</p>
+
+  <h2>What the server stores about your device</h2>
+  <p>To keep each device's access working, the server stores a random install ID, the device's App Attest public key, when it enrolled and when it was last used, the app version and daily AI usage counts. These records contain no journal entries, name, email, phone number or brokerage account.</p>
+  <p>Active installation records are kept while access is working. Records for expired access are removed after 90 days and revoked-access records after 400 days. Daily AI usage counters are kept for 35 days and enrollment-event records for 48 hours.</p>
+  <p>Operational logs record technical information such as request status, outcome, an installation identifier, token counts and response time, to operate, protect and troubleshoot the service. They do not contain your AI prompt, the read's text or any key.</p>
+
+  <h2>Removing your data</h2>
+  <ul>
+    <li>Mailbox access and held emails: Settings › Trade emails › Disconnect.</li>
+    <li>A Claude key you added yourself: Settings › AI reads › Your Claude key › Remove key, where shown.</li>
+    <li>Your journal: delete the app. Keychain items can outlast an app deletion, so use the controls above first.</li>
+    <li>Your device's records on The Ledger's server: email us and we will remove them.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>For privacy questions or deletion requests, email <a href="mailto:ziyad.abdulaziz@rookytech.com">ziyad.abdulaziz@rookytech.com</a>. Include enough information to identify the request, but never send passwords, API keys or access tokens.</p>
+</main>
+<footer>© 2026 RookyTech Inc. · <a href="/support/">Support</a></footer>
+</body>
+</html>
